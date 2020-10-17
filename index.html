@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Color Switch</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <button>Switch Colors</button>
+    <script type="text/javascript">
+        var color=["#222f3e","#ff4000","#ff8000","#ffbf00","#00ff00","#00ffff",
+        "#0000ff","#8000ff","#ff0040","#F8C471","#7D3C98","#CB4335","#FFB6C1","#8B475D"];
+        var i=0;
+        document.querySelector("button").addEventListener("click",
+        function() {
+            i = i< color.length ? ++i : 0;
+        document.querySelector("body").style.background=color[i]
+        })
+
+    </script>
+</body>
+</html>
